@@ -30,9 +30,25 @@ main {
     justify-content: center;
     align-items: center;
 }
-.square.green {
-    background-color: lightgreen;
+.square.blue {
+    background-color: lightblue;
 }
 .square.red {
     background-color: lightcoral;
 }
+
+.square.easy {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+
+.square.normal {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+
+.square.hard {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
+
