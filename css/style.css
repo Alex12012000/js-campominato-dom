@@ -3,9 +3,57 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* COMMON */
+img {
+    width: 100%;
+    display: inline-block;
+}
 
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    height: 80px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logo img {
+    width: 60px;
+    margin: 0 1rem;
+}
+
+.difficulty-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    height: 100%;
+    margin: 0 1rem;
+}
+
+.difficulty-section span {
+    margin: 0 .3rem;
+}
+
+button {
+    margin: 0 .5rem;
+    padding: 0 2rem;
+}
+
+select {
+    padding-right: 3rem;
+}
+
+
+/* Main */
 main {
-    background-color: lightcyan;
+    background-color: #7fffd4;
     padding: 50px;
     display: flex;
     justify-content: center;
@@ -16,14 +64,12 @@ main {
 #main-grid {
     width: 600px;
     height: 600px;
-    background-color: antiquewhite;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
 }
 
 .square {
-    background-color: lightpink;
     border: 1px solid black;
     width: calc(100% / 8);
     height: calc(100% / 8);
@@ -55,7 +101,15 @@ main {
 
 #user-message {
     text-align: center;
-    font-size: 22px;
-    padding: 2rem;
-    display: block;
+    padding-top: 3rem;
 }
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    height: 80px;
+    margin: 0 3rem;
+}
+

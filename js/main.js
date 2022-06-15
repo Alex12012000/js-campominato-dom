@@ -62,21 +62,21 @@ function gameStart() {
         // altrimenti la cella diventa blu
         div.addEventListener('click', bombOrSafe)
         function bombOrSafe() {
+
             // se l'utente clicca su un numero gia selezionato o clicca su una bomba
             // il numero non viene inserito nell'array
             if (!userInputArray.includes(i) && !bomb.includes(i)) {
                 userInputArray.push(i)
                 console.log(userInputArray)
             }
-
             // se l'utente preme un numero bomba il la cella diventa rossa, l'utente perde e il gioco finisce
-            if (bomb.includes(i)) {
-                div.classList.add('red')
-                alert('hai perso')
-                mainGrid.style.pointerEvents = 'none';
-                userMessage.innerHTML = 'Il tuo punteggio è: ' + userInputArray.length + ' premi play per giocare di nuovo!';
-
             // altrimenti la cella diventa blu
+            if (bomb.includes(i)) {
+                div.classList.add('red');
+                alert('hai perso');
+                mainGrid.style.pointerEvents = 'none';
+                userMessage.innerHTML = 'Peccato, hai perso :-( Hai azzeccato ' + userInputArray.length + ' tentativi . Gioca ancora..';
+                
             } else {
                 div.classList.add('blue')
                 

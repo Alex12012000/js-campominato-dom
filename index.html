@@ -11,16 +11,22 @@
 <body>
 
     <header>
-        <h1>Campo Fiorito</h1>
-        <select id="difficulty">
-            <option value="1">Easy</option>
-            <option value="2">Normal</option>
-            <option value="3">Hard</option>
-        </select>
-
-        <button id="play-btn">
-            Play
-        </button>
+        <div class="logo">
+            <img src="img/logo-boolean.png" alt="logo">
+            <h1>Campo Fiorito</h1>
+        </div>
+       <div class="difficulty-section">
+            <span>Difficoltà:</span>
+            <select id="difficulty">
+                <option value="1">Easy</option>
+                <option value="2">Normal</option>
+                <option value="3">Hard</option>
+            </select>
+            <button id="play-btn">
+                Play
+            </button>
+       </div>
+        
     </header>
 
     <main>
@@ -32,7 +38,9 @@
         <div id="user-message"></div>
     </main>
 
-
+    <footer>
+        <span>Made with &hearts; by <a href="#">Boolean</a></span>
+    </footer>
 
     <script type="text/javascript" src="js/main.js"></script>
 </body>
