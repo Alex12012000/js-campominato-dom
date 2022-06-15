@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: lightcyan;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-grid {
+    width: 600px;
+    height: 600px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.square {
+    background-color: lightpink;
+    border: 1px solid black;
+    width: calc(100% / 8);
+    height: calc(100% / 8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square.green {
+    background-color: lightgreen;
+}
+.square.red {
+    background-color: lightcoral;
+}
